@@ -1,1 +1,60 @@
-theme: jekyll-theme-cayman
+# Theme
+#remote_theme                : "mmistakes/minimal-mistakes"
+# theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin       : "default"
+
+# Site Settings
+title                       : "College Recipes"
+name                        : "Aliya"
+description                 : "(cool kids only)"
+
+
+# Reading Files
+include:
+    - .htaccess
+    - _pages
+
+# Plugins
+plugins:
+  - jemoji
+  - jekyll-remote-theme
+
+# Collections
+collections:
+    savory:
+        output: true
+        permalink: /:collection/:path/
+    sweet:
+        output: true
+        permalink: /:collection/:path/
+    basic:
+        output: true
+        permalink: /:collection/:path/
+
+
+defaults:
+    # _savory
+    - scope:
+        path: ""
+        type: savory
+      values:
+        layout: single
+        author_profile: false
+        share: false
+    # _sweet
+    - scope:
+        path: ""
+        type: sweet
+      values:
+        layout: single
+        author_profile: false
+        share: false
+    # _basic
+    - scope:
+        path: ""
+        type: basic
+      values:
+        layout: single
+        author_profile: false
+        share: false

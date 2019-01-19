@@ -1,0 +1,8 @@
+# main links
+main:
+  - title: "Savory"
+    url: "/savory/"
+  - title: "Sweet"
+    url: "/sweet/"
+  - title: "Basic"
+    url: "/basic/"
